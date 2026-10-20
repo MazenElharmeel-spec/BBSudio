@@ -176,14 +176,29 @@ button{
   gap: 13px
 }
 
-.cta span{
-  font-size: 18px
+.arrow-icon{
+  display: block;
+  width: 18px;
+  height: 18px;
+  flex: none;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round
 }
 
 .soft-link{
   font-size: 13px;
   border-bottom: 1px solid var(--ink);
-  padding-bottom: 5px
+  padding-bottom: 5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px
+}
+
+[dir=rtl] .soft-arrow{
+  transform: scaleX(-1)
 }
 
 .hero-visual{
@@ -368,6 +383,11 @@ button{
   place-items: center
 }
 
+.arrow .arrow-icon{
+  width: 16px;
+  height: 16px
+}
+
 .note{
   font-size: 11px;
   color: var(--muted);
@@ -428,7 +448,13 @@ button{
 
 .service .arr{
   color: var(--green);
-  font-size: 20px
+  display: grid;
+  place-items: start center
+}
+
+.service .arrow-icon{
+  width: 20px;
+  height: 20px
 }
 
 .pricing{
